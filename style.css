@@ -1,0 +1,431 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  background-image: url("images/bckgd.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#homebackground{
+  background-image: url("images/bckgd.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body {
+  margin: 0; 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  padding-top: 2%;
+}
+
+h1 {
+  font-family: "inge-variable", sans-serif;
+  font-variation-settings: 'slnt' 0;
+  font-size: 550%;
+  font-weight: 10;
+  color: white;
+}
+h2{
+     font-family: "new-spirit-condensed", serif;
+     font-weight: 400;
+     font-style: normal;
+     color: rgba(26,26,26,1.00);
+     font-size: 250%;
+}
+h3{
+     font-family: "new-spirit-condensed", serif;
+     font-weight: 400;
+     font-style: normal;
+     color: rgba(26,26,26,1.00);
+     font-size: 150%;
+}
+.Helvetica{
+     font-family: helvetica;
+     font-weight: 700;
+}
+nav {
+  font-family: "inge-variable", sans-serif;
+  font-variation-settings: 'slnt' 0;
+  font-size: 550%;
+  font-weight: 10;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 15px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.mainbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh; 
+  padding-bottom: 20%;
+}
+.video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+     padding-top: 5%;
+}
+#supercutcaption{
+     color: white;
+     display: flex;
+     padding: 5%;
+     padding-bottom: 0;
+}
+#supercutcaption2 {
+  color: white;
+  column-count: 4;
+  max-height: 100%;
+  overflow: hidden; 
+  padding: 5%;
+  padding-top: 0;
+     margin-bottom: 0;
+     padding-bottom: 20px;
+  font-family: "new-spirit-condensed", serif;
+  font-size: 150%;
+}
+
+.rotating-image {
+  width: 300px; 
+  height: 300px; 
+  background: url("images/SVG/Asset 1.svg") center/cover; 
+  animation: rotate 20s linear infinite;
+}
+#circleimg{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.whiteback{
+     background-color: rgba(232,232,232,1.00);
+}
+.blackback{
+     background-color: rgba(26,26,26,1.00);
+}
+footer{
+     padding: 2%;
+     font-family: "pt-mono", monospace;
+     font-weight: 400;
+     font-style: normal;
+     color: white;
+     background-color: #171717;
+}
+
+
+#photoheader{
+     background-color: rgba(17,17,17,1.00);
+     padding: 5%;
+     margin: 0;
+     text-align: center;
+     color: white;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25%,1fr));
+  grid-gap: 20px;
+  padding: 40px;
+  margin-top: 0;
+  background-color: rgba(17,17,17,1.00);
+  
+}
+.gallery2{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25%,1fr));
+  grid-gap: 20px;
+  padding: 40px;
+  margin-top: 0;
+  background-color: rgba(17,17,17,1.00);
+}
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#containermore {
+  padding: 3%;
+  padding-bottom: 6%;
+  margin-bottom: 3%;
+  text-align: center;
+  width: 94%;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-content {
+  width: 60%; 
+  padding: 1%; 
+  text-align: center; 
+}
+
+.image-content {
+  width: 30%; 
+}
+
+#portrait {
+  width: 100%;
+  max-width: 400px; 
+}
+
+#sticker {
+  width: 100%;
+  max-width: 200px; 
+  order: -1;
+}
+
+#containermaddie {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 7%;
+}
+
+#maddieheader {
+  font-size: 300%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; 
+}
+
+#captionmaddie {
+     font-family: "pt-mono", monospace;
+     font-weight: 400;
+     font-style: normal;
+     width: 60%; 
+     font-size: 110%;
+}
+
+#headerimg_maddie {
+     width: 300px;
+     padding-left: 20px;
+}
+
+#containeromar{
+     background-image: url("photo/images/omarcover.jpeg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     padding: 20%;
+     padding-top: 5%;
+     
+}
+#captionomar{
+     font-family: "pt-mono", monospace;
+     font-weight: 400;
+     font-style: normal;
+     width: 30%;
+     font-size: 110%;
+     color: white;
+}
+#omarheader{
+     font-size: 300%;
+     color: white;
+    
+}
+
+#containerlpc{
+     background-color: rgba(77,144,113,1.00);
+     padding: 10%;
+}
+#lpcheader{
+     color: rgba(124,239,191,1.00);
+     font-size: 600%;
+     text-align: center;
+     padding-bottom: 0;
+}
+#lpcheader2{
+     color: rgba(2,38,10,1.00);
+     font-size: 300%;
+     text-align: center;
+}
+#captionlpc{
+     font-family: "pt-mono", monospace;
+     font-weight: 400;
+     font-style: normal;
+     width: 30%;
+     font-size: 110%;
+     color: white;
+
+}
+#containerchi{
+     background-image: url("photo/images/DSCF1082.jpeg");
+     background-size: cover;
+     background-position: bottom;
+     padding: 7%;
+}
+#chiheader{
+     font-family: "inge-variable", sans-serif;
+     font-variation-settings: 'slnt' 0;
+     font-weight: 10;
+     font-size: 900%;
+     color: rgba(255,255,255,1.00);
+}
+#captionchi{
+     font-family: "pt-mono", monospace;
+     font-weight: 400;
+     font-style: normal;
+     width: 45%; 
+     font-size: 110%;
+     color: white;
+}
+#containernyc{
+     background-image: url("photo/images/720D6C32-3D09-46B0-BFEB-2507D0C8D12B.jpeg");
+     background-size: cover;
+     background-position: center;
+     padding: 7%;
+}
+
+#musicvideo{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     margin: 0;
+     background-color: rgba(160,184,245,1.00);
+     
+     
+}
+#mvcaption{
+     margin-top: 30px;
+     font-family: "new-spirit-condensed", serif;
+     font-size: 150%;
+     paddding:3%;
+}
+#mvtitle{
+     font-family: "ivypresto-headline", serif;
+     font-weight: 100;
+     font-style: normal;
+     font-size: 450%;
+}
+.darklink{
+     color: rgba(106,95,246,1.00);
+}
+
+/* Existing styles above this line */
+
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 4%;
+       
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #title {
+    order: 2; /* Move the title below the navigation */
+       font-size: 800%;
+  }
+
+  nav {
+    order: 1; /* Move the navigation above the title */
+  }
+
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px;
+       font-size: 100%;
+  }
+
+     .mainbody {
+          height: 70vh; /* Reset the height on small screens */
+          padding-bottom: 10%; /* Adjust padding as needed */
+     }
+
+     .gallery {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(45%,1fr)); 
+          padding: 30px; 
+     }
+     .gallery2 {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr); 
+          padding: 30px; 
+     }
+     #containermore {
+          width: auto; /* Full width for the container */
+     }
+
+
+     body {
+          background-image: url("images/bckgd.jpeg");
+          background-size:auto;
+          background-repeat: no-repeat;
+     }
+     #supercutcaption2 {
+          color: white;
+          column-count: 1;
+          max-height: 100%; /* Set a maximum height */
+          overflow: visible;
+          padding: 5%;
+          padding-top: 0;
+          font-family: "new-spirit-condensed", serif;
+          font-size: 150%;
+     }
+     #captionomar, #captionlpc, #captionchi{
+          width: 95%;
+     }
+     #headerimg_maddie {
+          width: 200px;
+     }
+     #omarheader{
+          padding-bottom: 8%;
+     }
+     #containeromar{
+          background-size:cover;
+          background-position: center;
+          padding: 25%;
+          padding-top: 3%;
+     }
+     #mvcaption{
+          padding: 5%;
+     }
+}
