@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>LANDON STEFANSKI</title>
+        <meta name="description" content="a portfolio of my work. design, photo, video, and more I have created." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/ydi0eij.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#00aba9" />
+        <meta name="theme-color" content="#ffffff" />
+    </head>
+    <body>
+        <header>
+            <a href="../index.html"><h1 id="title">LANDON STEFANSKI</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="../photo.html">PHOTO</a></li>
+                    <li><a href="../video.html">VIDEO</a></li>
+                    <li class="active"><a href="../design.html">DESIGN</a></li>
+                    <li><a href="../more.html">MORE</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="westridgecontainer2">
+            <img id="westridgelogo" src="images/3x/Asset 5@3x.png" alt="WEST RIDGE NATURE PARK" />
+            <p class="design_bodies">
+                Throughout 2023 I worked with West Ridge Nature Park, I contacted them about doing design work as
+                volunteer work and very quickly I ended up making a piece to advertise supporting the park. after
+                meeting we discussed making a little brochure.
+            </p>
+        </div>
+        <div id="westridgecontainer1">
+            <img class="active" src="images/brochure_westridge1-02.jpg" />
+            <img src="images/brochure_westridge1-01.jpg" />
+        </div>
+        <div id="westridgecontainer3">
+            <img src="images/poster_westridge.jpg" />
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const slides = document.querySelectorAll("#westridgecontainer1 img");
+                let currentSlide = 0;
+
+                function showSlide(index) {
+                    slides.forEach((slide, i) => {
+                        if (i === index) {
+                            slide.classList.add("active");
+                        } else {
+                            slide.classList.remove("active");
+                        }
+                    });
+                }
+
+                function nextSlide() {
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    showSlide(currentSlide);
+                }
+
+                setInterval(nextSlide, 3000); // Change slide every 3 seconds
+            });
+        </script>
+    </body>
+</html>
+<footer>
+    <p>&copy; 2024 LANDON STEFANSKI. ALL RIGHTS RESERVED.</p>
+</footer>
