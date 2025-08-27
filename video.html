@@ -1,53 +1,257 @@
 <!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>LANDON STEFANSKI</title>
-<meta name="description" content="a portfolio of my work. design, photo, video, and more I have created.">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://use.typekit.net/ydi0eij.css">
-</head> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>VIDEO - LANDON STEFANSKI</title>
+        <meta name="description" content="a portfolio of my work. design, photo, video, and more I have created." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/ydi0eij.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#00aba9" />
+        <meta name="theme-color" content="#ffffff" />
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <style>
+            #navButtons {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 100;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
 
-<body>
-     <header>
-               <a href="index.html"><h1 id="title">LANDON STEFANSKI</h1></a>
-               <nav>
-                 <ul>
-                   <li><a href="photo.html">PHOTO</a></li>
-                   <li><a href="video.html">VIDEO</a></li>
-                   <li><a href="design.html">DESIGN</a></li>
-                   <li><a href="more.html">MORE</a></li>
-                 </ul>
-               </nav>
-     </header>
-     <div class="blackback">
-          <div class="video">
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/ieVqmjel7m0?si=fdD3iDvb0qhsoE9q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-          </div>
-          
-          <h2 id="supercutcaption" class="Helvetica">SUPERCUT: A VIDEO MONTAGE CREATED TO DISPLAY MULTIPLE EVENTS OF SIGNIFICANCE OR OF IMPORTANCE. OFTEN WITHIN A SET TIMELINE. CREATING A WHOLE PIECE, TO COMMUNICATE AN IDEA.</h2>
-          
-          <div class="video">
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/xsQY3teOFMo?si=fjlQ-K2Edhq6YJB3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          
-          <p id="supercutcaption2">I’ve been making these for years. But in 2021 my world imploded, as it does for many 19 year olds. This led to a very intense and eventful year in 2022 which prompted me to take this form of documentary and not just make it a corny montage, but turn it into an art piece itself. Playing with composition and building a cinematic experience that captures what it really is to be ‘coming of age’ in the 21st century. <br><br>
+            button {
+                background-color: #575757;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 15px;
+                cursor: pointer;
+                font-size: 16px;
+                transition: all 0.3s ease;
+            }
 
-          As someone who is really dorky with technical stuff like video encoding and audio mixing I use this as an exercise to practice and perfect the quality of these short films.<br><br>
+            button:hover {
+                background-color: #2c2c2c;
+            }
+        </style>
+    </head>
 
-          This is my passion project, my thesis, and my legacy. I want to take these memories and present it how I feel it. A glorious kaleidoscope of love, liberation, and the fear that comes with growing into yourself.<br><br>
+    <body>
+        <header>
+            <a href="index.html"><h1 id="title">LANDON STEFANSKI</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="photo.html">PHOTO</a></li>
+                    <li class="active"><a href="video.html">VIDEO</a></li>
+                    <li><a href="design.html">DESIGN</a></li>
+                    <li><a href="more.html">MORE</a></li>
+                </ul>
+            </nav>
+        </header>
 
-          In 2023, I spent the entire year intently recording moments + b-roll like scenery to build a more cohesive narrative + setting. I divided it up into chapters signifying important moments in my life. <br>For example, a few were things like, moving to a very queer neighborhood, beginning a relationship, and ending the relationship when I realized I had to stand up for myself, the liberation that followed, a difficult semester in school that led to serious burnout. These were things that mean a lot to me on a personal level.</p>
-     </div>
-     
-     <div id="musicvideo">
-          <h2 id="mvtitle">ALONE WITH YOU MUSIC VIDEO</h2>
-          <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/vfKawRrQ52g?si=qj31M0O8jIVbC0rt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-          <p id="mvcaption">This was my first attempt at making a music video. Looking back even though its been only two years, there's a lot I would do differently. But I feel it is important to include in this portfolio because it still shows I'm capable of these things. I also had a really fun time doing it with my friend Paige. We're discussing making more and that excites me :)</p>
-     </div>
-</body>
-     <footer>
-          <p>&copy; 2024 LANDON STEFANSKI. ALL RIGHTS RESERVED.</p>
-     </footer>
+        <section id="section1">
+            <div class="blackback" id="supercuts">
+                <div>
+                    <div class="vimeocontainer">
+                        <div class="video_wrapper">
+                            <div style="padding: 2% 0 0 0; position: relative">
+                                <div style="padding: 75% 0 0 0; position: relative">
+                                    <iframe
+                                        src="https://player.vimeo.com/video/1038427226?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                        frameborder="0"
+                                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+                                        title="RUNNING THROUGH FIRE: A SUPERCUT"></iframe>
+                                </div>
+                                <script src="https://player.vimeo.com/api/player.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="supercutcaption2">
+                    This time is different.<br /><br />I wanted to convey the idea of running through fire. This can be
+                    broken down many ways which is the intention, it can be about fear, pain, grief or it can be about
+                    exhilaration, adrenaline, burning the pieces that don’t fit anymore. Creation in destruction is the
+                    most beautiful thing. I know what I am talking about is not unique to me. But I’m twenty-two so I
+                    get to be young and dramatic.
+                </p>
+
+                <h2 class="supercutcaption">
+                    SUPERCUT (NOUN): A VIDEO MONTAGE CREATED TO DISPLAY MULTIPLE EVENTS OF SIGNIFICANCE OR OF
+                    IMPORTANCE. OFTEN WITHIN A SET TIMELINE. CREATING A WHOLE PIECE, TO COMMUNICATE AN IDEA.
+                </h2>
+                <p class="supercutcaption2">
+                    Since I was handed a camera as a child I have been making videos. While I most definitely used to
+                    make videos of me lip-syncing and dancing in my room, and made comedy sketches with my brothers, the
+                    most important form of these videos to me was still documentary. Capturing my life and presenting in
+                    a way that reflects how I perceive it. After making videos for over a decade, I’ve finally got a
+                    clearer idea of how I want to make these now that I have some experience and better tools at my
+                    disposal. So in 2021 my world imploded, as it does for many 19 year olds. But I was for the first
+                    time in my life, in touch with my sense of self. I wanted to turn these videos I’m always making,
+                    that then didn’t have much substance, into a statement. Each year having its own general theme,
+                    laced in details that created a mosaic of my life and how I felt in those moments.<br /><br />TL;DR
+                    this is how I make sense of my own life, and present it.
+                </p>
+                <h2 class="supercutcaption">MORE:</h2>
+                <div id="thumbs">
+                    <a href="https://vimeo.com/1009309545"
+                        ><img class="supercutthumbs" src="images/2023.jpg" alt="2023 Film Thumbnail"
+                    /></a>
+                    <a href="https://vimeo.com/1009289586"
+                        ><img class="supercutthumbs" src="images/2022.jpg" alt="2022 Film Thumbnail"
+                    /></a>
+                </div>
+            </div>
+        </section>
+        <section id="section2">
+            <div id="irresistiblemv_container">
+                <div class="video_title" style="color: white">IRRESISTIBLE - PAIGE CAMERA</div>
+                <div class="vimeocontainer">
+                    <div class="video_wrapper">
+                        <div style="padding: 56.25% 0 0 0; position: relative">
+                            <iframe
+                                src="https://player.vimeo.com/video/1068275270?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+                                title="Irresistible (Official Music Video)"></iframe>
+                        </div>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
+                </div>
+                <p class="video_text" style="color: white">
+                    For Paige's debut record <i>Without Fear of Wind or Vertigo</i>, we shot a music video for the track
+                    <i>Irresistible</i>. We walked around her neighborhood and shot a lot of footage to compile later with a
+                    rather loose concept. We were inspired by Lana Del Rey's videos for <i>Norman Fucking Rockwell </i>in 2019. The track is one of the lighter airy ones on the record so we felt this was the best way to convey the energy of the song.
+                </p>
+            </div>
+        </section>
+        <section id="section3">
+            <div id="scarlet_container">
+                <div class="video_title" style="font-family: EditorialOldItalic; color: white">
+                    Scarlet (Live) - Paige Camera
+                </div>
+
+                <div class="vimeocontainer">
+                    <div class="video_wrapper">
+                        <div style="padding: 56.25% 0 0 0; position: relative">
+                            <iframe
+                                src="https://player.vimeo.com/video/1050886509?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+                                title="Scarlet (Live at Color Club) - Paige Camera"></iframe>
+                        </div>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
+                </div>
+                <p class="video_text" style="color: white">
+                    Had the privlege of shooting Paige's first gig, at Color Club. I was also asked to get a video of
+                    Scarlet, live. This was a really special night and I'm glad I was able to document an important part
+                    of it.
+                </p>
+            </div>
+        </section>
+        <section id="section4">
+            <div id="lake_video">
+                <div class="video_title">LAKEFRONT: A SHORT VIDEO</div>
+
+                <div class="vimeocontainer">
+                    <div class="video_wrapper">
+                        <div style="padding: 52.73% 0 0 0; position: relative">
+                            <iframe
+                                src="https://player.vimeo.com/video/969266641?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+                                title="lakefront"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <p class="video_text">
+                    In may of 2023, my dad and I went to Montrose Harbor, played with some new wide angle lenses and
+                    took photos. I shot video there and decided to make a short clip with it. It was a fun exercise in
+                    color grading and format.
+                </p>
+            </div>
+        </section>
+
+        <section id="section5">
+            <div id="musicvideocontainer">
+                <h2 id="mvtitle">ALONE WITH YOU<br />MUSIC VIDEO</h2>
+                <div id="musicvideo">
+                    <div class="videocontainer">
+                        <div class="video2">
+                            <iframe
+                                width="416"
+                                height="232"
+                                src="https://www.youtube.com/embed/vfKawRrQ52g?si=qj31M0O8jIVbC0rt"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <p id="mvcaption">
+                        This was my first attempt at making a music video. Looking back even though it has been only three
+                        years, there's a lot I would do differently. But I feel it is important to include in this
+                        portfolio because it still shows progress. I also had a really fun time doing
+                        it with my friend Paige.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div id="navButtons">
+            <button id="upButton">↑</button>
+            <button id="downButton">↓</button>
+        </div>
+
+        <script>
+            const sections = Array.from(document.querySelectorAll("section"));
+            const upButton = document.getElementById("upButton");
+            const downButton = document.getElementById("downButton");
+            let currentIndex = 0;
+
+            function scrollToSection(index) {
+                sections[index].scrollIntoView({ behavior: "smooth" });
+                currentIndex = index;
+            }
+
+            upButton.addEventListener("click", () => {
+                if (currentIndex > 0) {
+                    scrollToSection(currentIndex - 1);
+                }
+            });
+
+            downButton.addEventListener("click", () => {
+                if (currentIndex < sections.length - 1) {
+                    scrollToSection(currentIndex + 1);
+                }
+            });
+
+            // Update the current index based on scroll position
+            window.addEventListener("scroll", () => {
+                const scrollPosition = window.scrollY + window.innerHeight / 2;
+                sections.forEach((section, index) => {
+                    const offsetTop = section.offsetTop;
+                    const offsetBottom = offsetTop + section.offsetHeight;
+                    if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
+                        currentIndex = index;
+                    }
+                });
+            });
+        </script>
+    </body>
 </html>
+<footer>
+    <p>&copy; 2024 LANDON STEFANSKI. ALL RIGHTS RESERVED.</p>
+</footer>
